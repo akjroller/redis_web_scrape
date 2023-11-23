@@ -4,30 +4,31 @@ This repository contains a set of Python scripts utilizing Redis for data proces
 
 ## Scripts
 
-### 1. add_initial_data.py
+### 1. first_task.py
 
 - Adds an initial email and URL to respective Redis sets.
 - Usage:
-  ```bash
- python add_initial_data.py
+```bash
+ python first_task.py
+```
 
-### 2. url_processing.py
+### 2. create_tasks.py
  - Continuously processes URLs and emails from Redis sets, adding them to corresponding queues. 
  - Usage:
   ```bash
- python add_initial_data.py
+ python create_tasks.py
  ```
-### 3. web_scraping.py
+### 3. execute_scraping_tasks.py
 - Scrapes content from URLs, extracts new URLs and email addresses, and adds them to Redis sets.
 - Usage:
 ```bash
-  python web_scraping.py
+  python execute_scraping_tasks.py
 ```
-### 4. add_urls_to_csv.py
+### 4. execute_add_to_list_tasks.py
 - Periodically processes URLs from a Redis queue and updates a CSV file.
 - Usage:
 ```bash
-python add_urls_to_csv.py
+python execute_add_to_list_tasks.py
 ```
 
 ### 5. process_email_tasks.py
