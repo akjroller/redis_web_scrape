@@ -7,6 +7,7 @@ This repository contains a set of Python scripts utilizing Redis for data proces
 ### 1. first_task.py
 
 - Adds an initial email and URL to respective Redis sets.
+- Don't forget to add the first email and urls in
 - Usage:
 ```bash
  python first_task.py
