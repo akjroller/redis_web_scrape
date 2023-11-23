@@ -4,7 +4,7 @@ def add_initial_email(redis_host, redis_port, redis_password):
     try:
         r = redis.StrictRedis(host=redis_host, port=redis_port, password=redis_password)
         email_set = 'emails_found'
-        initial_email = 'akjroller@gmail.com'
+        initial_email = '' # add first email here
 
         if not r.sismember(email_set, initial_email):
             r.sadd(email_set, initial_email)
@@ -16,7 +16,7 @@ def add_initial_url(redis_host, redis_port, redis_password):
     try:
         r = redis.StrictRedis(host=redis_host, port=redis_port, password=redis_password, decode_responses=True)
         discovered_urls_set = 'discovered_urls'
-        initial_url = 'https://thehackernews.com/'
+        initial_url = '' # add first url here
 
         if not r.sismember(discovered_urls_set, initial_url):
             r.sadd(discovered_urls_set, initial_url)
