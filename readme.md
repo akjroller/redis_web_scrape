@@ -1,4 +1,5 @@
 # Redis-Based Data Processing Scripts
+# This repository was my first attempt at playing with redis to learn the technology.
 
 This repository contains a set of Python scripts utilizing Redis for data processing. The scripts perform various tasks, such as adding initial data to Redis sets, scraping URLs, and processing email tasks.
 
